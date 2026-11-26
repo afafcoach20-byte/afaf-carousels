@@ -2,85 +2,191 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<title>عفاف العمري — نبذة تعريفية</title>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<title>عفاف العمري — السيرة الذاتية</title>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700;800&family=Aref+Ruqaa:wght@700&display=swap" rel="stylesheet">
 <style>
   @page { size: A4; margin: 0; }
   :root{
-    --plum:#4a2b4f; --rose:#c9a27e; --gold:#b8894f; --cream:#fbf6f0; --ink:#2f2430; --soft:#efe4d8;
+    --dark:#15171c; --dark2:#1e2128; --rg:#c8957a; --rg2:#e2b9a1; --rgd:#a8735a;
+    --blush:#f3e6dc; --paper:#fbf7f3; --ink:#24262b; --mute:#6b6463;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{width:210mm;height:297mm;background:var(--cream);font-family:'Tajawal',sans-serif;color:var(--ink)}
-  .page{width:210mm;height:297mm;display:grid;grid-template-columns:68mm 1fr;overflow:hidden}
-  aside{background:var(--plum);color:#fff;padding:22mm 9mm 14mm;display:flex;flex-direction:column;gap:9mm;position:relative}
-  aside::after{content:"";position:absolute;inset:auto 0 0 0;height:6mm;background:linear-gradient(90deg,var(--gold),var(--rose))}
-  .mono{width:34mm;height:34mm;border-radius:50%;border:1.5px solid var(--rose);display:flex;align-items:center;justify-content:center;margin:0 auto;font-family:'Amiri',serif;font-size:30pt;color:var(--rose)}
-  aside h3{font-size:11.5pt;color:var(--rose);font-weight:700;border-bottom:1px solid rgba(201,162,126,.45);padding-bottom:2mm;margin-bottom:3mm}
-  aside ul{list-style:none;display:flex;flex-direction:column;gap:2.4mm;font-size:10.5pt;line-height:1.5}
-  aside li::before{content:"◆";color:var(--gold);font-size:7pt;margin-left:2mm;vertical-align:middle}
-  main{padding:22mm 14mm 14mm 14mm;display:flex;flex-direction:column;gap:8mm}
-  header h1{font-size:28pt;font-weight:800;color:var(--plum);line-height:1.2}
-  header .role{margin-top:2.5mm;font-size:13pt;font-weight:500;color:var(--gold)}
-  header .line{margin-top:5mm;width:30mm;height:1.2mm;background:linear-gradient(90deg,var(--rose),var(--gold));border-radius:2mm}
-  h2{font-size:14pt;color:var(--plum);font-weight:800;margin-bottom:3.5mm;display:flex;align-items:center;gap:2.5mm}
-  h2::before{content:"";width:2.2mm;height:5.5mm;background:var(--gold);border-radius:1mm}
-  .about p{font-size:11pt;line-height:1.95;text-align:justify}
-  .certs{display:flex;flex-direction:column;gap:3.5mm}
-  .cert{background:#fff;border-right:3px solid var(--gold);border-radius:2.5mm;padding:4mm 5mm;box-shadow:0 1px 0 var(--soft)}
-  .cert b{display:block;font-size:11.5pt;color:var(--plum)}
-  .cert span{font-size:9.8pt;color:#6d5d6e}
-  .brand{margin-top:auto;background:var(--soft);border-radius:3mm;padding:5mm 6mm;text-align:center}
-  .brand .t{font-size:15pt;font-weight:800;color:var(--plum);letter-spacing:.3px}
-  .brand .s{font-size:10pt;color:#6d5d6e;margin-top:1.5mm}
+  html,body{width:210mm;height:297mm;background:var(--paper);font-family:'Tajawal',sans-serif;color:var(--ink)}
+  .page{width:210mm;height:297mm;position:relative;overflow:hidden;display:grid;grid-template-columns:74mm 1fr}
+  svg.i{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  svg.b{width:100%;height:100%;fill:currentColor}
+
+  /* ===== Sidebar ===== */
+  aside{background:var(--dark);color:#eee;position:relative;padding:0 8mm 10mm;z-index:2}
+  .dots{position:absolute;left:6mm;bottom:8mm;width:24mm;height:18mm;background-image:radial-gradient(rgba(200,149,122,.35) 1px,transparent 1.3px);background-size:3mm 3mm}
+  .photo-wrap{position:relative;width:52mm;height:52mm;margin:14mm auto 9mm}
+  .photo{width:100%;height:100%;border-radius:50%;border:2.2px solid var(--rg);padding:1.6mm;background:var(--dark)}
+  .photo .img{width:100%;height:100%;border-radius:50%;background:linear-gradient(160deg,#3a3236,#20232a);overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+  .badge{position:absolute;left:-2mm;bottom:1mm;width:17mm;height:17mm;border-radius:50%;background:var(--dark);border:2px solid var(--rg);display:flex;align-items:center;justify-content:center;font-family:'Aref Ruqaa',serif;color:var(--rg2);font-size:21pt;line-height:1;padding-bottom:1.5mm}
+  .sec{margin-bottom:7mm}
+  .sh{display:flex;align-items:center;gap:2.6mm;padding-bottom:2.4mm;border-bottom:1px solid rgba(200,149,122,.45);margin-bottom:3.6mm}
+  .ic{width:8.2mm;height:8.2mm;border-radius:50% 50% 50% 0;background:var(--rg);color:var(--dark);padding:1.7mm;flex:none}
+  .sh h3{font-family:'El Messiri',serif;font-weight:600;font-size:13pt;color:#fff;letter-spacing:.2px}
+  .row{display:flex;align-items:center;gap:2.6mm;font-size:10pt;margin-bottom:2.8mm;color:#e9e4e1}
+  .row .c{width:6.6mm;height:6.6mm;border-radius:50%;background:rgba(200,149,122,.18);color:var(--rg2);padding:1.4mm;flex:none}
+  .ltr{direction:ltr;unicode-bidi:isolate}
+  .handle{font-size:11pt;font-weight:700;color:var(--rg2);text-align:center;direction:ltr;margin-bottom:3mm}
+  .socials{display:flex;justify-content:center;gap:2.2mm}
+  .socials span{width:8.4mm;height:8.4mm;border-radius:50%;border:1px solid rgba(200,149,122,.6);color:var(--rg2);padding:2mm;display:block}
+  .edu{border-right:1.5px solid rgba(200,149,122,.5);margin-right:1.6mm;padding-right:4.5mm;position:relative}
+  .edu::before{content:"";position:absolute;right:-2.1mm;top:1mm;width:2.7mm;height:2.7mm;border-radius:50%;background:var(--dark);border:1.5px solid var(--rg)}
+  .edu b{display:block;font-size:10.8pt;color:#fff}
+  .edu small{font-size:9.4pt;color:#bdb3ae}
+  .skill{margin-bottom:2.7mm}
+  .skill span{font-size:9.8pt;color:#e9e4e1;display:block;margin-bottom:1.1mm}
+  .bar{height:1.5mm;border-radius:1mm;background:rgba(255,255,255,.12);overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:1mm;background:linear-gradient(90deg,var(--rg2),var(--rgd));margin-right:0}
+
+  /* ===== Main ===== */
+  main{position:relative;padding:15mm 11mm 0 10mm;display:flex;flex-direction:column}
+  .blob{position:absolute;z-index:0}
+  .blob.a{left:-20mm;top:-22mm;width:72mm;height:62mm;border-radius:0 0 60% 40%/0 0 70% 50%;background:var(--blush)}
+  .blob.b{left:5mm;top:8mm;width:14mm;height:10mm;background-image:radial-gradient(var(--rg) 1px,transparent 1.3px);background-size:2.6mm 2.6mm;opacity:.7}
+  main>*{position:relative;z-index:1}
+  .head{display:flex;justify-content:space-between;align-items:flex-start}
+  .name{font-family:'El Messiri',serif;font-weight:700;line-height:1.08}
+  .name .n1{font-size:35pt;color:var(--dark);display:block}
+  .name .n2{font-size:35pt;color:var(--rg);display:block}
+  .title{margin-top:3mm;font-size:13.5pt;font-weight:500;color:var(--ink);letter-spacing:.3px}
+  .tag{font-family:'Aref Ruqaa',serif;color:var(--dark);font-size:15.5pt;line-height:1.55;text-align:center;margin-top:9mm;margin-left:2mm}
+  .tag::after{content:"";display:block;width:26mm;height:1.2mm;margin:2mm auto 0;border-radius:2mm;background:linear-gradient(90deg,transparent,var(--rg),transparent)}
+  .mh{display:flex;align-items:center;gap:2.6mm;margin-bottom:3.4mm}
+  .mh .ic{background:var(--rg);color:#fff}
+  .mh h2{font-family:'El Messiri',serif;font-weight:700;font-size:14pt;color:var(--dark)}
+  .mh .ln{flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(200,149,122,.7))}
+  .about{margin-top:8mm}
+  .about p{font-size:10.6pt;line-height:1.9;color:#3b3a3d;border-right:2px solid var(--rg);padding-right:4mm;text-align:justify}
+  .divider{display:flex;align-items:center;gap:2mm;margin:6mm 0 5.5mm}
+  .divider::before,.divider::after{content:"";flex:1;height:1px;background:rgba(200,149,122,.6)}
+  .divider i{width:2mm;height:2mm;border-radius:50%;background:var(--rg)}
+  .cols{display:grid;grid-template-columns:1.08fr 1fr;gap:6mm}
+  .tl{border-right:1.5px solid var(--dark);margin-right:3.8mm;padding-right:5mm}
+  .ti{position:relative;margin-bottom:4.6mm}
+  .ti:last-child{margin-bottom:0}
+  .ti::before{content:"";position:absolute;right:-7.05mm;top:1.2mm;width:3.2mm;height:3.2mm;border-radius:50%;background:var(--paper);border:2px solid var(--rg)}
+  .ti b{display:block;font-size:11pt;color:var(--dark);font-weight:800;line-height:1.4}
+  .ti em{font-style:normal;font-size:9.8pt;color:var(--mute);display:block;margin-top:.6mm}
+  .pill{display:inline-block;margin-top:1.6mm;font-size:8.8pt;background:var(--blush);color:var(--rgd);border-radius:1.2mm;padding:.5mm 2.4mm;font-weight:700}
+  .svc{border-right:1px solid rgba(200,149,122,.5);padding-right:4.5mm}
+  .sv{display:flex;align-items:center;gap:3mm;padding:2mm 0;border-bottom:1px solid rgba(200,149,122,.25);font-size:10.2pt;font-weight:500}
+  .sv:last-child{border:0}
+  .sv .c{width:9.4mm;height:9.4mm;border-radius:50%;background:var(--blush);color:var(--rgd);padding:2.3mm;flex:none;box-shadow:0 1px 3px rgba(168,115,90,.25)}
+  .method{margin-top:6mm}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:3.5mm}
+  .card{background:#fff;border-radius:2.6mm;padding:4mm 2mm 3.2mm;text-align:center;box-shadow:0 1.2mm 3mm rgba(60,40,30,.08);border-top:2px solid var(--rg)}
+  .card .c{width:11mm;height:11mm;margin:0 auto 2mm;border-radius:2.4mm;background:var(--dark);color:var(--rg2);padding:2.5mm}
+  .card b{font-size:10.6pt;color:var(--dark);display:block}
+  .card small{font-size:8.8pt;color:var(--mute)}
+  .quote{margin-top:auto;margin-left:-10mm;margin-right:-11mm;background:var(--dark);border-radius:14mm 0 0 0;padding:8mm 12mm 9mm 30mm;position:relative;overflow:hidden;color:#efe6e0}
+  .quote .q{font-family:'El Messiri',serif;font-size:28pt;color:var(--rg);line-height:.6;display:block;height:6mm}
+  .quote p{font-family:'Aref Ruqaa',serif;font-size:15pt;line-height:1.75;color:#f1e7e1}
+  .quote .leaf{position:absolute;left:2mm;bottom:-4mm;width:34mm;height:40mm;color:var(--rg);opacity:.85}
 </style>
 </head>
 <body>
 <div class="page">
+
+  <!-- ===== Sidebar ===== -->
   <aside>
-    <div class="mono">ع</div>
-    <div>
-      <h3>مجالات التخصص</h3>
-      <ul>
-        <li>الكوتشينج المالي</li>
-        <li>العافية الشمولية</li>
-        <li>الوعي المالي للمرأة</li>
-        <li>علاقة المرأة بالمال والوفرة</li>
-        <li>التوازن الإيماني والمشاعري</li>
-      </ul>
+    <div class="photo-wrap">
+      <div class="photo"><div class="img"><svg viewBox="0 0 100 100" style="width:80%;color:#c8957a;opacity:.55"><circle cx="50" cy="38" r="18" fill="currentColor"/><path d="M14 100c4-24 18-36 36-36s32 12 36 36z" fill="currentColor"/></svg></div></div>
+      <div class="badge">ع</div>
     </div>
-    <div>
-      <h3>المؤسسة والبرامج</h3>
-      <ul>
-        <li>استراتيجية <bdi dir="ltr">GrowRich™</bdi></li>
-        <li>برنامج بوابة الثراء الأنثوي</li>
-      </ul>
+
+    <div class="sec">
+      <div class="sh"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><h3>التواصل</h3></div>
+      <div class="row"><span class="c"><svg class="i" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span class="ltr">0546291113</span></div>
+      <div class="row"><span class="c"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span class="ltr">Afafcoach20@gmail.com</span></div>
+      <div class="row"><span class="c"><svg class="i" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><span>جدة · تبوك</span></div>
     </div>
+
+    <div class="sec">
+      <div class="sh"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h3>حساباتي</h3></div>
+      <div class="handle">@afafcoach20</div>
+      <div class="socials">
+        <span><svg class="b" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span>
+        <span><svg class="b" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></span>
+        <span><svg class="b" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></span>
+        <span><svg class="b" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></span>
+        <span><svg class="b" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></span>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sh"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c2 2 10 2 12 0v-5M22 9v5"/></svg></span><h3>التخصص</h3></div>
+      <div class="edu"><b>إدارة مكتبية – محاسبة</b><small>التخصص الأكاديمي</small></div>
+    </div>
+
+    <div class="sec">
+      <div class="sh"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="m12 3 2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span><h3>المهارات</h3></div>
+      <div class="skill"><span>الكوتشينج المالي</span><div class="bar"><i style="width:95%"></i></div></div>
+      <div class="skill"><span>العافية الشمولية</span><div class="bar"><i style="width:92%"></i></div></div>
+      <div class="skill"><span>بناء المنهجيات والبرامج التدريبية</span><div class="bar"><i style="width:90%"></i></div></div>
+      <div class="skill"><span>صناعة المحتوى التوعوي</span><div class="bar"><i style="width:90%"></i></div></div>
+      <div class="skill"><span>الإلقاء والتدريب</span><div class="bar"><i style="width:88%"></i></div></div>
+      <div class="skill"><span>المحاسبة والتنظيم المالي</span><div class="bar"><i style="width:85%"></i></div></div>
+    </div>
+    <div class="dots"></div>
   </aside>
 
+  <!-- ===== Main ===== -->
   <main>
-    <header>
-      <h1>عفاف ظافر صالح العمري</h1>
-      <div class="role">كوتش مالي وعافية شمولية &nbsp;|&nbsp; مؤسِّسة استراتيجية قرورتش <bdi dir="ltr">GrowRich™</bdi></div>
-      <div class="line"></div>
-    </header>
+    <div class="blob a"></div><div class="blob b"></div>
+
+    <div class="head">
+      <div>
+        <div class="name"><span class="n1">عفاف ظافر</span><span class="n2">صالح العمري</span></div>
+        <div class="title">كوتش مالي وعافية شمولية</div>
+      </div>
+      <div class="tag">وعيٌ يصنع<br>الوفرة</div>
+    </div>
 
     <section class="about">
-      <h2>نبذة</h2>
-      <p>كوتش متخصصة في الوعي المالي والعافية الشمولية للمرأة، ومؤسِّسة استراتيجية <b>قرورتش <bdi dir="ltr">GrowRich™</bdi></b> التي تجمع بين الوعي المالي والإيماني والمشاعري في منهج واحد متكامل. تعمل على مساعدة المرأة الطموحة على بناء علاقة صحية وواعية مع المال، وإدارة مواردها بحكمة واتزان، والوصول إلى الوفرة والاستقرار دون أن تفقد توازنها الداخلي.</p>
+      <div class="mh"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></span><h2>نبذة عني</h2><span class="ln"></span></div>
+      <p>كوتش مالي وعافية شمولية، ومؤسِّسة منهجية <b class="ltr">GrowRich™</b> «قرورتش» التي تجمع بين الوعي المالي والإيماني والمشاعري في طريق واحد متكامل. أساعد المرأة الطموحة على بناء علاقة صحية وواعية مع المال، وإدارة مواردها بحكمة واتزان، لتصل إلى الوفرة والاستقرار دون أن تفقد سلامها الداخلي.</p>
     </section>
 
-    <section>
-      <h2>الشهادات والمؤهلات</h2>
-      <div class="certs">
-        <div class="cert"><b>خريجة أكاديمية هوليستك (Holistic Academy)</b><span>العافية الشمولية</span></div>
-        <div class="cert"><b>خريجة أكاديمية رشيد المالي</b><span>الكوتشينج والوعي المالي</span></div>
-        <div class="cert"><b>مدربة معتمدة في منهجية ـــــــــ</b><span>تدريب وكوتشينج معتمد</span></div>
+    <div class="divider"><i></i></div>
+
+    <div class="cols">
+      <section>
+        <div class="mh"><span class="ic"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8.5 13.5-1.5 7.5 5-3 5 3-1.5-7.5"/></svg></span><h2>الشهادات</h2><span class="ln"></span></div>
+        <div class="tl">
+          <div class="ti"><b>خريجة أكاديمية هوليستك</b><em>العافية الشمولية · د. ريهام قراش</em><span class="pill">2025</span></div>
+          <div class="ti"><b>خريجة أكاديمية رشيد المالي</b><em>الكوتشينج والوعي المالي</em><span class="pill">2026</span></div>
+          <div class="ti"><b>مؤسِّسة منهجية <span class="ltr">GrowRich™</span></b><em>منهجية الثراء الأنثوي الشمولي</em><span class="pill">تأسيس</span></div>
+        </div>
+      </section>
+
+      <section class="svc">
+        <div class="mh"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2"/><circle cx="12" cy="12" r="3"/></svg></span><h2>ما أقدّمه</h2></div>
+        <div class="sv"><span class="c"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.4 0-2.5.8-2.5 2s1.1 1.6 2.5 2 2.5.8 2.5 2-1.1 2-2.5 2c-1 0-2-.5-2.5-1.5M12 6.5v11"/></svg></span>جلسات كوتشينج مالي فردية</div>
+        <div class="sv"><span class="c"><svg class="i" viewBox="0 0 24 24"><path d="M4 21V9a8 8 0 0 1 16 0v12"/><path d="M8 21v-9a4 4 0 0 1 8 0v9M2 21h20"/></svg></span>برنامج بوابة الثراء الأنثوي</div>
+        <div class="sv"><span class="c"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4M7 12l3-3 2 2 4-4"/></svg></span>ورش ودورات الوعي المالي</div>
+        <div class="sv"><span class="c"><svg class="i" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>العافية الشمولية والتوازن</div>
+        <div class="sv"><span class="c"><svg class="i" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="m10.5 9.5 4 2.5-4 2.5z"/></svg></span>محتوى توعوي على المنصات</div>
+      </section>
+    </div>
+
+    <section class="method">
+      <div class="mh"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 22V12M12 12C12 7 8 4 3 4c0 5 4 8 9 8zM12 12c0-5 4-8 9-8 0 5-4 8-9 8z"/></svg></span><h2>ركائز منهجية <span class="ltr">GrowRich™</span></h2><span class="ln"></span></div>
+      <div class="cards">
+        <div class="card"><div class="c"><svg class="i" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></div><b>الوعي المالي</b><small>إدارة وتنمية المال بحكمة</small></div>
+        <div class="card"><div class="c"><svg class="i" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/><path d="m17 4 .7 1.6 1.6.7-1.6.7L17 8.6l-.7-1.6-1.6-.7 1.6-.7z"/></svg></div><b>الوعي الإيماني</b><small>رزقٌ بيقين وبركة</small></div>
+        <div class="card"><div class="c"><svg class="i" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></div><b>الوعي المشاعري</b><small>علاقة صحية مع المال</small></div>
       </div>
     </section>
 
-    <div class="brand">
-      <div class="t"><bdi dir="ltr">GrowRich™</bdi> · قرورتش</div>
-      <div class="s">وعي مالي · وعي إيماني · وعي مشاعري</div>
+    <div class="quote">
+      <span class="q">”</span>
+      <p>الثراء يبدأ من الداخل..<br>ثم يفيض على كل تفاصيل حياتكِ</p>
+      <svg class="leaf i" viewBox="0 0 60 70" style="stroke-width:.9"><path d="M30 70C30 50 28 30 22 8"/><path d="M29 52c-8-2-14-8-16-17 8 1 14 7 16 17zM28 38c6-3 10-9 10-17-6 3-10 9-10 17zM26 26c-6-2-10-7-11-14 6 1 10 6 11 14zM24 15c4-2 7-6 7-11-4 2-7 6-7 11z"/><path d="M29 52 16 37M28 38l8-15M26 26l-9-12M24 15l5-9"/></svg>
     </div>
   </main>
 </div>
